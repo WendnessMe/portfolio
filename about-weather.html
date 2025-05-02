@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Weather and Sound</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="resources/images/logo.svg">
+        <script src="https://kit.fontawesome.com/0a7d691b85.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    <body class="">
+
+        <header class="flex justify-between  bg-fuchsia-800">
+            <div class="flex h-24 w-10/12 m-auto items-center justify-between">
+                <a href="../git-portfolio/index.html">
+                    <img class="h-20" src="resources/images/logo.svg" alt="Logo">
+                </a>
+                <nav class="flex justify-center space-x-2 items-center text-amber-100">
+                    <a target="_blank" href="https://linkedin.com/in/wendnessme">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/wendnessme">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex flex-col w-10/12 m-auto mb-6">
+            <section class="flex mt-32 items-center">
+                <div class="flex flex-col">
+                    <h1 class="text-6xl font-bold">
+                        Weather and Sound
+                    </h1>
+                </div>
+            </section>
+
+            <section class="flex  justify-center text-justify items-center mt-24 mb-28">
+                <article class="text-justify prose md:prose-xl lg:prose-xl">
+
+                    <p>
+                        Weather and Sound, recomendações musicais "climáticas". É bem simples: o usuário insere uma cidade e recebe recomedações de músicas de acordo com o clima atual naquela cidade.
+                    </p>
+
+                    <h2 class="font-bold mt-4 mb-4 text-xl">
+                        🛠️ Tecnologias Utilizadas
+                    </h2>
+                    <ul class="list-disc ml-4">
+                        <li>
+                            Laravel no back end.
+                        </li>
+                        <li>
+                            TailwindCSS + Vite + Javascript no front end.
+                        </li>
+                        <li>
+                            API da OpenWeatherMap para captar os dados meteorológicos.
+                        </li>
+                        <li>
+                            API's do Spotify e do Deezer para pegar as prévias das músicas que combinam com o clima.
+                        </li>
+                        <li>
+                            Servidor FrankenPHP em um container Docker para hospedagem. 
+                        </li>
+                    </ul>
+
+                    <h2 class="font-bold mt-4 mb-4 text-xl">
+                        ☁️ Hospedagem
+                    </h2>
+
+                    <p>
+                        No momento o projeto está hospedado na Koyeb, que se mostrou ser um PaaS muito prático que o plano gratuito encaixou como uma luva para hospedar um projetinho pequeno. Sem contar que como o projeto está usando Docker, fica bem tranquilo de portar para outra plataforma eventualmente se for necessário.
+
+                        Foi um projetinho até que bem tranquilo que fiz mais para aquecer alguns conhecimentos básicos, como o consumo de API's e criação de containers. Porém ele ainda não está "completo", tenho um checklist de coisas que serão interessantes de implementar para torná-lo mais "redondinho", como, por exemplo: melhorar o sistema de recomendação, melhorar a responsividade e dar um tapa no visual e etc.
+                        Por hora estou até que satisfeito com esse MVP, foi um bom exercício para relembrar alguns conceitos e futuramente posso expandir e aprofundar os estudos melhorando o mesmo projeto.
+                    </p>
+                    
+                    <a class="text-indigo-600" target="_blank" href="https://weather-and-sound.thefantastickernel.com">
+                        Clique aqui para acessar o projeto.
+                    </a>
+                </article>
+            </section>
+
+        </main>
+
+        <footer class="flex flex-col m-auto bg-zinc-800 h-24">
+            <section class="text-amber-50 w-10/12 m-auto">
+                <p class="text-amber-50 flex justify-center">
+                    © Chimera Codes | Keven Wilson - 2025
+                </p>
+            </section>
+        </footer>
+
+    </body>
+
+</html>

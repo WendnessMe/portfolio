@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Keven Wilson</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="resources/images/logo.svg">
+        <script src="https://kit.fontawesome.com/0a7d691b85.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    <body class="">
+
+        <header class="flex justify-between  bg-fuchsia-800">
+            <div class="flex h-24 w-10/12 m-auto items-center justify-between">
+                <a href="/">
+                    <img class="h-20" src="resources/images/logo.svg" alt="Logo">
+                </a>
+                <nav class="flex justify-between space-x-2 items-center text-amber-100">
+                    <a alt="My LinkedIn" target="_blank" href="https://linkedin.com/in/wendnessme">
+                        <i class="fa-brands fab-linkedin fab-2x"></i>
+                    </a>
+                    <a alt="My Github" target="_blank" href="https://github.com/wendnessme">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex flex-col w-10/12 m-auto mb-6">
+            <section class="flex h-[400px] items-center">
+                <div class="flex flex-col">
+                    <h1 class="md:text-6xl text-5xl font-bold">
+                        Keven Wilson,
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl"> um <b>Desenvolvedor Web</b> em desenvolvimento</h2>
+                </div>
+            </section>
+
+            <section id="projects" class=" grid grid-cols-2 bg-fuchsia-700 rounded-xl p-8">
+                <h1 class="text-3xl text-amber-100 font-bold flex col-span-2 justify-center mb-16">
+                    Projetos
+                </h1>
+                <div class="col-span-2 flex justify-around flex-wrap justify-content-start"> 
+                        <div class="flex mb-12 flex-col items-center max-w-sm max-h-sm w-full bg-purple-800 hover:bg-purple-700 rounded-xl p-6">
+                            <h1 class="text-amber-100 flex justify-center">
+                                <a href="https://weather-and-sound.thefantastickernel.com/">
+                                      Weather and Sound
+                                </a>
+                            </h1>
+                            <img class="w-[28rem] rounded-xl" src="resources/images/thumbs/weather-and-sound.png" alt="Project Thumbnail">
+                            <p class="mt-4 mb-4 text-amber-50 text-justify">
+                                Uma aplicação para recomendar músicas de acordo com o clima de uma cidade.
+                            </p>
+                            <div class="flex space-x-2">
+                                    <a class="px-2 py-2 hover:bg-amber-400 bg-amber-200 rounded-lg  flex  items-center justify-center" target="_blank" href="https://weather-and-sound.thefantastickernel.com">
+                                        Live
+                                    </a>
+                                    <a class="px-2 py-2 hover:bg-amber-400 bg-amber-200 rounded-lg  flex  items-center justify-center" href="about-weather.html">
+                                        Sobre
+                                    </a>
+                            </div>
+                        </div>
+                </div>
+
+            </section>
+
+            <section class="flex flex-col w-2xl m-auto justify-center items-center mt-16 mb-16">
+                <div class="prose text-justify md:prose-md">
+                    <h1 class="text-center font-bold text-3xl mb-8 mt-4">
+                        Um pouco sobre mim
+                    </h1>
+                    <div >
+                        <p>
+                            Opa, tudo bom!? Permita-me fazer uma breve introdução a meu respeito. Sou um programador back-end que vem se dedicando ao mundo do desenvolvimento web há pouco mais de uns 2 anos focado em PHP e atualmente estou no 4ª período de ADS. Além de estudos teóricos também coloquei os conhecimentos em prática com pequenos projetos individuais e recentemente comecei a dar o próximo passo e estou colocando alguns projetos para rodar em produção. Por hora posso ainda não ter muitos projetos rodando em produção, mas tenho muita disposição e sede de aprender mais através dos outros projetos que tenho planejados.<br>
+                            Sobre as techs que uso:
+                        </p>
+
+                        <div class="flex m-auto  justify-center flex-col flex-wrap ">
+                            <h2 class="text-center font-bold mt-8 mb-2">
+                                No back end
+                            </h2>
+                            <ul class="list-disc">
+                                <li>PHP</li>
+                                <li>Laravel, já cheguei a brincar um pouco com CakePHP e Symfony também, mas Laravel é o framework PHP com o qual tenho mais familiaridade.</li>
+                            </ul>
+                            <h2 class="text-center font-bold mt-6 mb-2">
+                                No front end
+                            </h2>
+                            <ul class="list-disc">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>TailwindCSS</li>
+                            </ul>
+                            <h2 class="text-center font-bold mt-6 mb-2">
+                                Bancos de dados e outras techs
+                            </h2>
+                            <ul class="list-disc">
+                                <li>PostgreSQL</li>
+                                <li>MySQL/MariaDB</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                                <li>Oracle Cloud</li>
+                                <li>AWS (EC2)</li>
+                                <li>Linux</li>
+                            </ul>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="flex flex-col m-auto bg-zinc-800 h-24">
+            <section class="text-amber-50 w-10/12 m-auto">
+                <p class="text-amber-50 flex justify-center">
+                    © Chimera Codes | Keven Wilson - 2025
+                </p>
+            </section>
+        </footer>
+
+    </body>
+
+</html>
